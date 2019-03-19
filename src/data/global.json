@@ -1,0 +1,78 @@
+{
+	"title": "LAB",
+	"introNavItems": [
+		{
+			"nav": [
+				{
+					"title": "Intro", 
+					"slug": "intro", 
+					"href": "#intro"
+				},
+				{
+					"title": "Enter the blockchain", 
+					"slug": "section01",
+					"href": "#section01"
+				},
+				{
+					"title": "The 'always up' network", 
+					"slug": "section02",
+					"href": "#section02"
+				},
+				{
+					"title": "A whole new relationship", 
+					"slug": "section03",
+					"href": "#section03"
+				},
+				{
+					"title": "Read the future", 
+					"slug": "section04",
+					"href": "#section04"
+				},
+				{
+					"title": "Contacts", 
+					"slug": "section05 contacts",
+					"href": "#section05"
+				}
+			]
+		} 
+		 
+	],
+	"sectionNavItems": [
+		{
+			"nav": [
+				 
+				{
+					"title": "Enter the blockchain", 
+					"slug": "section01",
+					"id": "anchor1",
+					"href": "#section01"
+				},
+				{
+					"title": "The 'always up' network", 
+					"slug": "section02",
+					"id": "anchor2",
+					"href": "#section02"
+				},
+				{
+					"title": "A whole new relationship", 
+					"slug": "section03",
+					"id": "anchor3",
+					"href": "#section03"
+				},
+				{
+					"title": "Read the future", 
+					"slug": "section04",
+					"id": "anchor4",
+					"href": "#section04"
+				},
+				{
+					"title": "Contacts", 
+					"slug": "section05 contacts",
+					"id": "anchor5",
+					"href": "#section05"
+				}
+			]
+		} 
+		 
+	] 
+}

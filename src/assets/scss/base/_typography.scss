@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'BentonSansBook';
+    src: url('../fonts/BentonSansBook.eot');
+    src: url('../fonts/BentonSansBook.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansBook.woff2') format('woff2'),
+         url('../fonts/BentonSansBook.woff') format('woff'),
+         url('../fonts/BentonSansBook.ttf') format('truetype'),
+         url('../fonts/BentonSansBook.svg#BentonSansBook') format('svg');
+}
+@font-face {
+    font-family: 'BentonSansMedium';
+    src: url('../fonts/BentonSansMedium.eot');
+    src: url('../fonts/BentonSansMedium.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansMedium.woff2') format('woff2'),
+         url('../fonts/BentonSansMedium.woff') format('woff'),
+         url('../fonts/BentonSansMedium.ttf') format('truetype'),
+         url('../fonts/BentonSansMedium.svg#BentonSansMedium') format('svg');
+}
+@font-face {
+    font-family: 'BentonSansLight';
+    src: url('../fonts/BentonSansLight.eot');
+    src: url('../fonts/BentonSansLight.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansLight.woff2') format('woff2'),
+         url('../fonts/BentonSansLight.woff') format('woff'),
+         url('../fonts/BentonSansLight.ttf') format('truetype'),
+         url('../fonts/BentonSansLight.svg#BentonSansLight') format('svg');
+}
+@font-face {
+    font-family: 'BentonSansRegular';
+    src: url('../fonts/BentonSansRegular.eot');
+    src: url('../fonts/BentonSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansRegular.woff2') format('woff2'),
+         url('../fonts/BentonSansRegular.woff') format('woff'),
+         url('../fonts/BentonSansRegular.ttf') format('truetype'),
+         url('../fonts/BentonSansRegular.svg#BentonSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'BentonSansBold';
+    src: url('../fonts/BentonSansBold.eot');
+    src: url('../fonts/BentonSansBold.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansBold.woff2') format('woff2'),
+         url('../fonts/BentonSansBold.woff') format('woff'),
+         url('../fonts/BentonSansBold.ttf') format('truetype'),
+         url('../fonts/BentonSansBold.svg#BentonSansBold') format('svg');
+}
+@font-face {
+    font-family: 'BentonSansBlack';
+    src: url('../fonts/BentonSansBlack.eot');
+    src: url('../fonts/BentonSansBlack.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansBlack.woff2') format('woff2'),
+         url('../fonts/BentonSansBlack.woff') format('woff'),
+         url('../fonts/BentonSansBlack.ttf') format('truetype'),
+         url('../fonts/BentonSansBlack.svg#BentonSansBlack') format('svg');
+}
+ 
+$font-family-regular: 'BentonSansRegular';
+$font-family-bold: 'BentonSansBold';
+$font-family-Book: 'BentonSansBook';
+$font-family-light: 'BentonSansLight';
+$font-family-medium: 'BentonSansMedium';
+$font-family-black: 'BentonSansBlack';
+
+html {
+  font-size: calc(1em * .625);
+  font-family:$font-family-regular;
+}
+
+body {
+  font: 1.6rem / 1.5 $darkest;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-family-regular, Helvetica, Helvetica Neue, Arial, sans-serif;
+  color: $darkest; 
+  font-size: 1.8rem;  
+  background: $white;
+}
+
+.red{
+    color:$red;
+}
+.orange{
+    color:$orange;
+}
+.green{
+    color:$green;
+}
+.yellow{
+    color:$yellow;
+}
+a {
+  color: $darkest;
+}
+p{
+    font-size:1.6rem;
+    margin:0;
+    padding:0 0 1.6rem 0;
+    line-height:2.4rem;
+    @media #{$breakpoint-md} {
+        font-size:1.6rem;
+    }
+}
+strong{
+    font-family: $font-family-bold;
+}
+
+h1 { 
+    margin-top: 0;
+    font-family: $font-family-bold;
+    line-height: 1;
+    font-size: 4.0rem;
+    font-weight: 300;
+    @media #{$breakpoint-md} {
+        font-size: 5.6rem;
+        font-weight: 300;
+    }
+}
+
+
+h2 {
+    font-size: 2.6rem;
+    margin: 0;
+    font-family: $font-family-light;
+    line-height: 1;
+    margin-bottom:3rem;
+    font-weight: 300;
+    @media #{$breakpoint-md} {
+        font-size: 4.75rem;
+    }
+}
+
+
+h3 {
+    font-size: 2.4rem;
+    margin: 0 0 1.6rem 0;
+    font-family: $font-family-light;
+    line-height:2.4rem;
+    font-weight: 300;
+      @media #{$breakpoint-md} {
+        margin: 0 0 2.2rem 0;
+        font-size: 3.0rem;
+        line-height:3.2rem;
+    } 
+}
+
+
+h4 {
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: $font-family-light;
+    line-height:2.4rem;
+    padding-bottom: 1.2rem;
+    @media #{$breakpoint-md} {
+        font-size: 2.4rem;
+        padding-bottom: 1.6rem;
+    }    
+}

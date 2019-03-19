@@ -1,0 +1,134 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+}
+
+@mixin webfont-styles {
+	display: inline-block;
+	height: inherit;
+	margin:0 0.2rem;
+	font-size: 100%;
+	font-family: "icons";
+	font-variant: normal;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-align: center;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="webfont-"],
+[class*=" webfont-"],
+.webfont {
+	display: inline-block;
+
+	&:before {
+		@include webfont-styles;
+	}
+}
+
+@function webfont-char($filename) {
+	$char: "";
+
+	@if $filename == "arrow-left" {
+		$char: "\E001";
+	}
+	@if $filename == "arrow-link-out" {
+		$char: "\E002";
+	}
+	@if $filename == "arrow-long" {
+		$char: "\E003";
+	}
+	@if $filename == "arrow-longer" {
+		$char: "\E004";
+	}
+	@if $filename == "arrow-right" {
+		$char: "\E005";
+	}
+	@if $filename == "arrow-short" {
+		$char: "\E006";
+	}
+	@if $filename == "arrow" {
+		$char: "\E007";
+	}
+	@if $filename == "cheveron-thin" {
+		$char: "\E008";
+	}
+	@if $filename == "close" {
+		$char: "\E009";
+	}
+	@if $filename == "facebook" {
+		$char: "\E00A";
+	}
+	@if $filename == "linkedin" {
+		$char: "\E00B";
+	}
+	@if $filename == "play" {
+		$char: "\E00C";
+	}
+	@if $filename == "plus" {
+		$char: "\E00D";
+	}
+	@if $filename == "twitter" {
+		$char: "\E00E";
+	}
+
+	@return $char;
+}
+
+@mixin webfont($filename, $insert: before) {
+	&:#{$insert} {
+		content: webfont-char($filename);
+	}
+}
+
+.webfont-arrow-left {
+	@include webfont("arrow-left");
+}
+.webfont-arrow-link-out {
+	@include webfont("arrow-link-out");
+}
+.webfont-arrow-long {
+	@include webfont("arrow-long");
+}
+.webfont-arrow-longer {
+	@include webfont("arrow-longer");
+}
+.webfont-arrow-right {
+	@include webfont("arrow-right");
+}
+.webfont-arrow-short {
+	@include webfont("arrow-short");
+}
+.webfont-arrow {
+	@include webfont("arrow");
+}
+.webfont-cheveron-thin {
+	@include webfont("cheveron-thin");
+}
+.webfont-close {
+	@include webfont("close");
+}
+.webfont-facebook {
+	@include webfont("facebook");
+}
+.webfont-linkedin {
+	@include webfont("linkedin");
+}
+.webfont-play {
+	@include webfont("play");
+}
+.webfont-plus {
+	@include webfont("plus");
+}
+.webfont-twitter {
+	@include webfont("twitter");
+}
