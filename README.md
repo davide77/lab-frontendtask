@@ -1,5 +1,3 @@
-# value-retail
-
 ## Requirements
 
 For UI build and development requires [node.js >= 4.4.0](http://nodejs.org/) and [npm >= 2.14.20](https://www.npmjs.org/)
